@@ -10,7 +10,7 @@ const fetchRoomsData = async () => {
 fetchRoomsData();
 
 const displayRoomsData = async (rooms) => {
-  console.log('see rooms------',rooms);
+  // console.log('see rooms------',rooms);
   
   const roomsContainer = document.getElementById("rooms-container");
   roomsContainer.innerHTML=''
@@ -58,6 +58,6 @@ document.getElementById('sort-by-price-btn').addEventListener('click', () =>{
      allRooms.sort((a,b)=>{
         return parseFloat(a.price.$numberDecimal) > parseFloat(b.price.$numberDecimal)  ? 1: -1
     })
-    console.log('sort-------',allRooms)
+    // console.log('sort-------',allRooms)
     displayRoomsData(allRooms)
 })
